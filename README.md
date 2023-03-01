@@ -1,5 +1,5 @@
 ### AdHoc Report Preview
-![AdHock Report](https://github.com/Lone2000/Historic-World-Cup-Adhoc-Report/blob/main/World_cup_dashboard.pdf)
+![AdHock Report](https://github.com/Lone2000/Historic-World-Cup-Adhoc-Report/blob/main/World_cup_dashboard.jpg)
 
 ### Purpose
 This code repo represents a simple but insightful adhoc report with the goal to represent "World Cup Host Countries Statistics" over the years. Exploratory and Data manipulation was completed using MySQL, whereas Visualization was completed using Microsoft Power Bi. Meanwhile, Data was loading by connecting an instance of the Database to the Power Bi Tool.
