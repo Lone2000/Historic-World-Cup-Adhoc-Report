@@ -5,6 +5,8 @@ SELECT * FROM projects.world_cup_matches;
 
 # Main Question: How have host countries performed in World Cups over time?
 
+# Use Sub Queries For Trial & Error
+
 # Calculate total goals scored by each host country.
 with cte2 AS(
 SELECT wcm.Year as `Year`, 
@@ -29,7 +31,7 @@ SELECT cte.*
 FROM cte;
 
 
-# Final Query
+# Final Query Using CTE
 # Calculate how many wins & loses each host country had.
 with cte as (
 SELECT wcm.Year as `Year`, (SELECT wc.`Host Country` FROM projects.world_cups as wc WHERE wcm.Year = wc.Year) as `Host Country`,
@@ -43,7 +45,6 @@ SELECT cte.*,  wc.`Matches Played` , (`Matches Won` / wc.`Matches Played`) * 100
 FROM cte
 LEFT JOIN projects.world_cups as wc
 ON cte.`Year` = wc.`Year`;
-
   
   
   
